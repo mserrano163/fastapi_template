@@ -1,0 +1,5 @@
+.env*
+.ssl
+!.env.example
+**/__pycache___
+**/__pycache__
