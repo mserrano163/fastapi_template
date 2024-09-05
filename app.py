@@ -1,11 +1,12 @@
 # Import libraries and plugins
 import logging 
 import os
-from fastapi import FastAPI
+from fastapi import FastAPI, Form
 from pydantic import BaseModel
 from pathlib import Path
 from enum import Enum
 from dotenv import load_dotenv
+from typing import Annotated
 
 from plugins import (
     ApiForm,
@@ -30,3 +31,8 @@ logger = logging.getLogger(__name__)
 @your_app_name.get("/hello_world")
 def your_app_hello():
     return success_response("Hello World")
+
+
+@your_app_name.post("/form_test")
+def api_form_test(data: Annotated[ApiForm, Form()]):
+    return data
