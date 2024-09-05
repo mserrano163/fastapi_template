@@ -35,7 +35,7 @@ This repository contains a template for a basic API built with FastAPI. It provi
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your_username/your_repo.git
+   git clone https://github.com/mserrano163/fastapi_template.git
    cd your_repo
 
 2. **Build the Docker Image**

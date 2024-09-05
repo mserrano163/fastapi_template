@@ -1,4 +1,6 @@
-from pydantic import BaseModel  # type: ignore
+from typing import Annotated
+from fastapi import FastAPI, Form
+from pydantic import BaseModel
 from enum import Enum
 
 # Define pydantic models
